@@ -1,4 +1,6 @@
 def analisa_registros(registros: dict):
+    if registros == None or registros == {}: return
+
     result = {}
     for chave, valor in registros.items():
         saldo_final = 0
