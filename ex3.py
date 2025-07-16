@@ -1,10 +1,8 @@
 from functools import reduce
 
 def analisa_listas(*listas: list):
-    soma = 0
-    for lista in listas:
-        soma += reduce(lambda x, y: x + y, filter(lambda x: x % 2 == 0, lista))
-    return soma
+    result = sum(reduce(lambda x, y: x + y, filter(lambda x: x % 2 == 0, lista)) for lista in listas)
+    return result
 
 # Exemplo de uso:
 
