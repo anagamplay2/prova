@@ -1,5 +1,5 @@
 def analisa_registros(registros: dict):
-    if registros == None or registros == {}: return
+    if registros == None or registros == {}: return 'Nenhum registro cadastrado'
 
     result = {}
     for chave, valor in registros.items():
