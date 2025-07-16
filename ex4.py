@@ -1,4 +1,4 @@
-def analisa_registros(registros: dict):
+def retorna_saldo_final(registros: dict):
     if registros == None or registros == {}: return 'Nenhum registro cadastrado'
 
     result = {}
@@ -20,4 +20,4 @@ registros = {
     "lazer": [(4, 'entrada'), (5, 'entrada')]
 }
 
-print(analisa_registros(registros))
+print(retorna_saldo_final(registros)) # {'alimentacao': -1, 'transporte': -5, 'lazer': 9}

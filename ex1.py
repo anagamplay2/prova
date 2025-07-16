@@ -1,4 +1,4 @@
-def analisa_candidatos(candidatos: list):
+def candidatos_aptos(candidatos: list):
     result = [
         nome
         for nome, idade in candidatos
@@ -15,4 +15,4 @@ lista_candidatos = [
     ('Felippe', 16),
 ]
 
-print(analisa_candidatos(lista_candidatos))
+print(candidatos_aptos(lista_candidatos)) # ['João', 'Paulo']
