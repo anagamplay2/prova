@@ -1,8 +1,14 @@
 from functools import reduce
 
 def soma_pares(*listas: list):
-    result = sum(reduce(lambda x, y: x + y, filter(lambda num: num % 2 == 0, lista)) for lista in listas)
-    return result
+    for lista in listas: 
+        if lista == []: return 'Não insira listas vazias'
+
+    try:
+        result = sum(reduce(lambda x, y: x + y, filter(lambda num: num % 2 == 0, lista)) for lista in listas)
+        return result
+    except:
+        print('Erro: Insira listas válidas!')
 
 # Exemplo de uso:
 
