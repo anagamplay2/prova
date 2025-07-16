@@ -1,5 +1,5 @@
 def retorna_saldo_final(registros: dict):
-    if registros == None or registros == {}: return 'Nenhum registro cadastrado'
+    if registros == {}: return 'Nenhum registro cadastrado'
 
     result = {}
     for chave, valor in registros.items():

@@ -1,4 +1,6 @@
 def candidatos_aptos(candidatos: list):
+    if candidatos == []: return 'Nenhum candidato cadastrado'
+    
     result = [
         nome
         for nome, idade in candidatos
@@ -15,4 +17,4 @@ lista_candidatos = [
     ('Felippe', 16),
 ]
 
-print(candidatos_aptos(lista_candidatos)) # ['João', 'Paulo']
+print(candidatos_aptos([])) # ['João', 'Paulo']
