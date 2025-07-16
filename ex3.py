@@ -1,7 +1,7 @@
 from functools import reduce
 
 def soma_pares(*listas: list):
-    result = sum(reduce(lambda x, y: x + y, filter(lambda x: x % 2 == 0, lista)) for lista in listas)
+    result = sum(reduce(lambda x, y: x + y, filter(lambda num: num % 2 == 0, lista)) for lista in listas)
     return result
 
 # Exemplo de uso:
